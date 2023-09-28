@@ -44,8 +44,6 @@ const handleRequest = async (request) => {
   ) {
     return itemController.addItem(request);
   } else {
-    console.log(url.pathname);
-    console.log(request.method);
     return new Response("Not found", { status: 404 });
   }
 };
